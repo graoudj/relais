@@ -1,0 +1,179 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px; /* Largeur maximale */
+    width: 95%; /* Largeur relative */
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 55px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+.table-container {
+    overflow-x: auto; /* Pour les petits écrans */
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: separate;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #ecc454;
+    font-weight: bold;
+}
+
+td {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+td input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Bandes alternées */
+}
+
+/* Logos */
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 200px;
+}
+
+/* Titres */
+h3 {
+    text-align: center;
+    color: #818181;
+}
+
+/* Formulaires */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 0 0 48%; /* Largeur de chaque groupe */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Boutons */
+button, .btn, .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.button {
+    background-color: #45a049;
+}
+
+.button:hover {
+    background-color: #32a59d;
+}
+
+.enfant-button {
+    background-color: #e4ad26;
+}
+
+.enfant-button:hover {
+    background-color: #ecc454;
+}
+
+.logout-button {
+    background-color: #f44336;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.btn {
+    background-color: #28a745;
+}
+
+/* Alertes */
+.alert {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Divers */
+.myDiv {
+    text-align: center;
+}
+
+.myDiv2 {
+    width: 400px;
+    padding: 10px;
+    border: 1px outset red;
+    background-color: lightgreen;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Réactivité */
+@media screen and (max-width: 1200px) {
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
